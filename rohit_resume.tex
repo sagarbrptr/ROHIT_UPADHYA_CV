@@ -1,0 +1,288 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{ROHIT}{UPADHYA}{
+\href{mailto:rohitupadhya18@gmail.com}{\Letter\ rohitupadhya18@gmail.com}\ \ \
+\href{}{\faMobile\ +91-8134082213/+91-9615422513} \ \ \
+\href{https://github.com/nocturnalnocturnal}{\faGithub\ nocturnalnocturnal}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+
+
+
+\subsection{National Institute of \\Technology, Silchar} 
+\descript{B.Tech. in Computer Science and Engineering}
+\location{Expected May 2019}
+
+\location{CGPA : 8.23 / 10 \\
+(as of 5$^{th}$ Semester.)}
+\sectionsep
+
+\subsection{South Point School, \\Guwahati}
+\location{AISSCE 2014, CBSE | Guwahati, India. \\Percentage : 92.2
+}
+\sectionsep
+
+
+\subsection{St.Edmund's School, \\Shillong.}
+\location{ICSE 2012, CISCE | Shillong, India. \\ Percentage : 91.6
+}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+
+\subsection{Undergraduate}
+
+Data Structures \\
+Object Oriented Design \\
+Discrete Structures \\
+Signals \& Data Communication \\
+Computer Graphics \\
+Formal Languages and Automata Theory\\
+Stochastic Processes\\
+Microprocessors \& System Programming\\
+Computer Networks\\
+Computer Architecture and Organization
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\location{Proficient}
+Java \textbullet{}   C \textbullet{} \LaTeX{}   \\ 
+\location{Intermediate}
+Android \textbullet{} CSS \textbullet{}HADOOP \textbullet{}JavaScript \textbullet{}Nodejs \textbullet{} SageMath\\
+\location{Familiar:}
+MATLAB 
+
+\section{Areas of Interest}
+ Big Data, Cyber Security, Android App Development, Core Java, Algorithms
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{PROJECTS}
+
+
+
+\runsubsection{Big data processing using Hadoop MultiClusters}
+
+\descript{NIT Silchar}
+\location{Guide: Mr. Ripon Patgiri, NIT Silchar.}
+\location{December 2016 – February 2017}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Performed a detailed analysis of the HADOOP framework.
+    \item Successfully connected 37 computers using the HADOOP Framework.
+    \item Was successful in writing and executing various programs in the multi-cluster.
+    \item Delivered a brief lecture on Big Data and HADOOP.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{TEDx NIT Silchar Website | \href{https://github.com/nocturnalnocturnal/TEDx-Website}{\faGithub} }
+
+\descript{NIT Silchar}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Developed an interactive website for TEDx NIT Silchar, 2016.
+    \item Technologies Used : 
+    \vspace{\topsep}
+        \begin{tightemize}
+            HTML \textbullet{}JavaScript \textbullet{}CSS \textbullet{} Bootstrap Framework
+        \end{tightemize}
+\end{tightemize}
+\sectionsep
+
+
+
+\section{Research Work}
+
+\runsubsection{Study and Analysis of Lightweight Stream Ciphers | \href{https://github.com/nocturnalnocturnal/Some-standard-Stream-Ciphers-and-Study-and-Analysis-of-these-Stream-Ciphers}{\faGithub}}
+\descript{NEHU, Shillong}
+\location{16$^{th}$May 2017 - 29$^{th}$ June 2017}
+\location{Guide : Dr.B.Bhuyan, NEHU Shillong.}
+\vspace{\topsep}
+\begin{tightemize}
+    \item Objective :Detailed analysis and implementation of Feedback Shift Registers, Stream Ciphers and Attacks on them.
+    \item Analysis will help in making a better Cipher.
+    \item Performed an attack on one of the ciphers.
+    \item Studied various papers related to different Ciphers and also the Mathematics involved.
+    \item Wrote a detailed report in \LaTeX{} on various LFSRs, Ciphers and Attacks performed of Ciphers during the internship period.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Book Chapter}\\
+\descript{Chapter Name\ : \ Applicability of Lightweight Stream Cipher in Crowd Computing: A detailed Survey and Analysis}
+\location{Co-authors : Dr.B.Bhuyan, NEHU Shillong, Mr.Subhrajyoti Deb, NEHU Shillong.}
+\vspace{\topsep}
+\begin{tightemize}
+    \item Accepted in the book \emph{Crowd Assisted Networking and Computing}  to be published by by \emph{CRC Press, Taylor \& Francis, USA}.
+    \item Book edited by Al-Sakib Khan Pathan, Associate Professor, Department of Computer Science and Engineering, Southeast University, Dhaka, Bangladesh.
+    \item Online version will be out soon.
+\end{tightemize}
+\sectionsep
+
+
+\end{minipage}
+\newpage
+\begin{minipage}[t]{0.33\textwidth}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\section{ACHIEVEMENTS} 
+    \item Stood 8$^{th}$ in ICSE(10$^{th}$ Board), 2012 \\in the State of Meghalaya, India.
+    \item Accredited with A+ in Core Java by \\HPES held in NIT Silchar(January 2016).
+    \item Accredited with A in Android App \\Development by HPES(May-June 2016).
+\sectionsep
+
+
+
+
+
+
+\end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{minipage}[t]{0.60\textwidth}
+
+\section{EXPERIENCE}
+\runsubsection{Executive Member}
+\descript{| Computer Science Society, NIT Silchar.}
+\location{2017-2018}
+\sectionsep
+
+\runsubsection{Research Intern}
+\descript{| NEHU, Shillong.}
+
+\location{May 2017 - June 2017}
+\sectionsep
+
+\runsubsection{Core Team Member \& Website Developer}\\
+\descript{ TEDx NIT Silchar}
+\location{November, 2016}
+\sectionsep
+
+\runsubsection{Instructor of C classes of Freshmen in NIT Silchar}
+\descript{}
+
+\location{2016-2017}
+\sectionsep
+
+\runsubsection{Core Java Trainee}
+\descript{| HP Education Service}
+\location{January ,2016}
+\sectionsep
+
+\runsubsection{Android App Development Trainee}
+\descript{| HP Education Service}
+\location{Kolkata Batch of Summer 2016}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\end{minipage}
+\end{document}
